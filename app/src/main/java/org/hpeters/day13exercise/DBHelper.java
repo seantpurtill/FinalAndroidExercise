@@ -1,9 +1,10 @@
-package ca.seandoescode.www.finalandroidexercise;
+package org.hpeters.day13exercise;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.Toast;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -14,7 +15,7 @@ import java.sql.SQLException;
 public class DBHelper extends SQLiteOpenHelper {
 
     //The Android's default system path of your application database.
-    private static String DB_PATH = "C:\\Users\\764092\\AndroidStudioProjects\\FinalAndroidExercise";
+    private static String DB_PATH = "/data/data/org.hpeters.day13exercise/databases/";
 
     private static String DB_NAME = "TravelExpertsSqlLite.db";
 
@@ -75,7 +76,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
         }catch(SQLiteException e){
 
-            //database does't exist yet.
+            //make your own fucking toast.
 
         }
 

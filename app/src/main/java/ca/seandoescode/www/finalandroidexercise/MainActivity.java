@@ -20,12 +20,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        source = new AgentDataSource(this);
-
-        lvAgents = findViewById(R.id.lvAgents);
-        ArrayList list = source.getAllAgents();
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, list);
-        lvAgents.setAdapter(adapter);
+//        source = new AgentDataSource(this);
+//
+//        lvAgents = findViewById(R.id.lvAgents);
+//        ArrayList list = source.getAllAgents();
+//        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, list);
+//        lvAgents.setAdapter(adapter);
 
     }
 }
